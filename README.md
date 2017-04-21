@@ -1,4 +1,4 @@
-### FreeCoursesRegBot
+# FreeCoursesRegBot
 
 ## Prerequirsit
 - Chrome
