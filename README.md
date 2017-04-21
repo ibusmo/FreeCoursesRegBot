@@ -7,6 +7,7 @@
     - with extension: Tempermonkey
 - Firefox
     - with extension: Greasemonkey
+- login Udemy accout
 
 ## Installation
 - Goto Tempermonkey dashboard
