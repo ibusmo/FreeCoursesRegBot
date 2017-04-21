@@ -4,11 +4,11 @@ For Chrome extension version -> please wait.
 
 ## Prerequirsit
 - Chrome
-    - with extension: Tempermonkey
+  - with extension: Tempermonkey
 - Safari
-    - with extension: Tempermonkey
+  - with extension: Tempermonkey
 - Firefox
-    - with extension: Greasemonkey
+  - with extension: Greasemonkey
 - Login Udemy accout
 
 ## Installation
