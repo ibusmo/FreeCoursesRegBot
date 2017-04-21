@@ -1,4 +1,6 @@
 # FreeCoursesRegBot
+Injection script to Javascript.
+For Chrome extension version -> please wait.
 
 ## Prerequirsit
 - Chrome
@@ -11,7 +13,7 @@
 
 ## Installation
 - Goto Tempermonkey dashboard
-- Utilies
+- Utilities tab
 - Zip: Import (Choose File)
 
 ## Run
