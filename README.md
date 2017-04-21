@@ -9,7 +9,7 @@ For Chrome extension version -> please wait.
     - with extension: Tempermonkey
 - Firefox
     - with extension: Greasemonkey
-- login Udemy accout
+- Login Udemy accout
 
 ## Installation
 - Goto Tempermonkey dashboard
