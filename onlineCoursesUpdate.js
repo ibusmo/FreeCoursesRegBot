@@ -45,62 +45,64 @@
 
     }
 
-	var i = 0;
-	function openCourseLink() {
-		//operation
-		let link = links[i];
-		
-		if (link) {
-       		console.log(i + ' ' + link);
-        	openLinkAsNewTab(link);
+  	var i = 0;
+  	function openCourseLink() {
+  		//operation
+  		let link = links[i];
+  		
+  		if (link) {
+         		console.log(i + ' ' + link);
+          	openLinkAsNewTab(link);
 
-		}
+  		}
 
-        //delay controller
-	    i++;
-	    if( i < links.length ){
-	        setTimeout( openCourseLink, delay );
+          //delay controller
+  	    i++;
+  	    if( i < links.length ){
+  	        setTimeout( openCourseLink, delay );
 
-	    } else {
+  	    } else {
 
-	    	closeWindow();
-	    }
+  	    	closeWindow();
+  	    }
 
-	}
+  	}
 
-	function closeWindow() {
-     	setTimeout(function() {
-			window.close();
-		}, closeDelay);
+  	function closeWindow() {
+       	setTimeout(function() {
+  			window.close();
+  		}, closeDelay);
 
-	}
+  	}
 
-	function takeAllTheseCourses(links) {
-   		console.log('There are ' + links.length + ' courses.');
-   		
-   		if (links) {
-   			openCourseLink();
+  	function takeAllTheseCourses(links) {
+     		console.log('There are ' + links.length + ' courses.');
+     		
+     		if (links) {
+     			openCourseLink();
 
-   		} else {
-   			console.log('There is no course.');
-   			closeWindow();
+     		} else {
+     			console.log('There is no course.');
+     			closeWindow();
 
-   		}
+     		}
 
-	}
+  	}
 
-	function KeyCheck(e)
-	{
-       	console.log(e.keyCode);
-       	if (e.keyCode === 73) {			//g
-       		console.log('HIT & RUN');
-       		takeAllTheseCourses(links);
-       	}
-	}
+  	function KeyCheck(e)
+  	{
+         	console.log(e.keyCode);
+         	if (e.keyCode === 73) {			//g
+         		console.log('HIT & RUN');
+         		takeAllTheseCourses(links);
+         	}
+  	}
 
-	window.addEventListener('keydown', KeyCheck, true);
+  	window.addEventListener('keydown', KeyCheck, true);
 
-	var links = getCourseLinks();
-	// takeAllTheseCourses();
+  	var links = getCourseLinks();
+    setTimeout(function() {
+        takeAllTheseCourses(links);
+    }, delay);
 
 })();
